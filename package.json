@@ -9,7 +9,7 @@
       "install": "cd server && npm i && cd ../client && npm i",
       "postinstall": "npm run build",
       "build": "cd client && npm run build",
-      "heroku-postbuild": "npm run build"
+      "heroku-postbuild": "cd client && npm install && npm run build"
     },
     "dependencies": {
       "@fortawesome/free-brands-svg-icons": "^6.5.1",
